@@ -60,8 +60,6 @@
   <img width="100%" src="https://streak-stats.demolab.com?user=oneroomlife&hide_border=true&background=00000000&ring=8B7BD8&fire=FB7299&currStreakLabel=8B7BD8&sideLabels=8B7BD8&currStreakNum=57606a&sideNums=57606a&dates=9aa4b2" alt="GitHub Streak" />
 </div>
 
-<sub>上面两张图由 <a href="scripts/gen_assets.py"><code>scripts/gen_assets.py</code></a> 直接读取 GitHub 公开数据生成、随仓库提交，每天由 Actions 刷新一次，不经过任何第三方图床。</sub>
-
 ## 🐍 摸鱼蛇 & 🧊 3D 贡献图
 
 <div align="center">
