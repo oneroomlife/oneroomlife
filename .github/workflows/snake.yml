@@ -1,0 +1,47 @@
+name: 🐍 Generate Contribution Snake
+
+on:
+  schedule:
+    # 每天 00:00 UTC（北京时间 08:00）刷新一次
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - master
+
+concurrency:
+  group: snake
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate snake SVGs
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+
+      # 不用 ghaction-github-pages：它固定以 github-actions[bot] 提交，
+      # 会让 bot 出现在仓库贡献者列表里。这里手工提交，作者写成仓库主。
+      - name: Publish to `output` branch as repo owner
+        run: |
+          set -e
+          ls -la dist
+          test -f dist/github-snake.svg
+          cd dist
+          git init -q -b output
+          git config user.name "oneroomlife"
+          git config user.email "147360129+oneroomlife@users.noreply.github.com"
+          git add -A
+          git commit -q -m "chore: update contribution snake"
+          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" HEAD:output

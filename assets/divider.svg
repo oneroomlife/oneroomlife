@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="80" viewBox="0 0 1200 80" role="presentation" aria-hidden="true">
+  <defs>
+    <linearGradient id="d1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#d9b8f0" stop-opacity="0"/>
+      <stop offset="0.18" stop-color="#c9a6e8" stop-opacity="0.95"/>
+      <stop offset="0.52" stop-color="#9fb6ec" stop-opacity="0.95"/>
+      <stop offset="0.86" stop-color="#8fc6f0" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#8fc6f0" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="d2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e7d6f5" stop-opacity="0"/>
+      <stop offset="0.3" stop-color="#dccdf3" stop-opacity="0.75"/>
+      <stop offset="0.7" stop-color="#cfe0f7" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#cfe0f7" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <g>
+    <path d="M-60,46 C140,26 300,60 480,44 C660,28 820,8 1000,28 C1110,40 1160,52 1260,40" fill="none" stroke="url(#d1)" stroke-width="6" stroke-linecap="round">
+      <animateTransform attributeName="transform" type="translate" values="0 0; 18 -2; 0 0" dur="9s" repeatCount="indefinite"/>
+    </path>
+    <path d="M-60,60 C160,48 320,74 500,60 C680,46 840,32 1020,46 C1120,54 1170,62 1260,54" fill="none" stroke="url(#d2)" stroke-width="3" stroke-linecap="round">
+      <animateTransform attributeName="transform" type="translate" values="0 0; -14 2; 0 0" dur="13s" repeatCount="indefinite"/>
+    </path>
+    <circle cx="600" cy="42" r="4" fill="#b9a6ea" opacity="0.8">
+      <animate attributeName="opacity" values="0.15;0.85;0.15" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="330" cy="50" r="2.6" fill="#9fb6ec" opacity="0.7">
+      <animate attributeName="opacity" values="0.7;0.15;0.7" dur="6.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="880" cy="38" r="2.6" fill="#8fc6f0" opacity="0.7">
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="7.4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

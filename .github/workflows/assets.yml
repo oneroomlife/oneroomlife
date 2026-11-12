@@ -1,0 +1,50 @@
+name: 📈 Refresh generated assets
+
+on:
+  schedule:
+    # 每天 00:15 UTC（北京时间 08:15）刷新贡献热力图与数据面板
+    - cron: "15 0 * * *"
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/gen_assets.py"
+      - ".github/workflows/assets.yml"
+
+concurrency:
+  group: refresh-assets
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate SVG assets
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/gen_assets.py
+
+      - name: Commit & push
+        run: |
+          # 用仓库主身份提交，避免 github-actions[bot] 出现在贡献者里
+          git config user.name "oneroomlife"
+          git config user.email "147360129+oneroomlife@users.noreply.github.com"
+          git add assets
+          if git diff --cached --quiet; then
+            echo "no changes"
+            exit 0
+          fi
+          git commit -m "chore: refresh contribution graph & stats"
+          for i in 1 2 3; do
+            # 远端可能已被别处更新，先 rebase 再推，重试三次
+            git pull --rebase --autostash origin main && git push && break
+            echo "push retry $i"; sleep $((i * 3))
+          done
