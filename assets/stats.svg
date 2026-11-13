@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1060" height="232" viewBox="0 0 1060 232" role="img" aria-label="GitHub stats">
   <style>text{font-family:'Segoe UI','PingFang SC','Microsoft YaHei','Helvetica Neue',Arial,sans-serif;}</style>
-  <text x="132" y="86" font-size="44" font-weight="700" fill="#7f5ade" text-anchor="middle">72</text>
+  <text x="132" y="86" font-size="44" font-weight="700" fill="#7f5ade" text-anchor="middle">76</text>
   <text x="132" y="112" font-size="13" font-weight="600" fill="#6b7280" text-anchor="middle">Stars</text>
   <text x="132" y="132" font-size="11" fill="#9aa4b2" text-anchor="middle">收下的星星</text>
   <text x="398" y="86" font-size="44" font-weight="700" fill="#7f5ade" text-anchor="middle">5</text>
   <text x="398" y="112" font-size="13" font-weight="600" fill="#6b7280" text-anchor="middle">Forks</text>
   <text x="398" y="132" font-size="11" fill="#9aa4b2" text-anchor="middle">被分走的版本</text>
   <rect x="265" y="46" width="1" height="96" fill="#eeecf6"/>
-  <text x="662" y="86" font-size="44" font-weight="700" fill="#7f5ade" text-anchor="middle">5</text>
+  <text x="662" y="86" font-size="44" font-weight="700" fill="#7f5ade" text-anchor="middle">4</text>
   <text x="662" y="112" font-size="13" font-weight="600" fill="#6b7280" text-anchor="middle">Repositories</text>
   <text x="662" y="132" font-size="11" fill="#9aa4b2" text-anchor="middle">公开仓库</text>
   <rect x="530" y="46" width="1" height="96" fill="#eeecf6"/>
@@ -17,8 +17,8 @@
   <rect x="795" y="46" width="1" height="96" fill="#eeecf6"/>
   <text x="34" y="158.0" font-size="12" font-weight="600" fill="#6b7280">语言构成</text>
   <rect x="34" y="168" width="992" height="12.0" rx="6" fill="#eeecf6"/>
-  <rect x="34.0" y="168" width="972.8" height="12.0" rx="6" fill="#7F52FF"/>
-  <rect x="1006.8" y="168" width="12.5" height="12.0" rx="6" fill="#3776AB"/>
+  <rect x="34.0" y="168" width="972.9" height="12.0" rx="6" fill="#7F52FF"/>
+  <rect x="1006.9" y="168" width="12.4" height="12.0" rx="6" fill="#3776AB"/>
   <rect x="1019.3" y="168" width="5.6" height="12.0" rx="6" fill="#F7DF1E"/>
   <rect x="1024.9" y="168" width="2.0" height="12.0" rx="6" fill="#FB7299"/>
   <rect x="1025.5" y="168" width="2.0" height="12.0" rx="6" fill="#00A1D6"/>
