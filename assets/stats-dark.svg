@@ -17,18 +17,18 @@
   <rect x="795" y="46" width="1" height="96" fill="#262a33"/>
   <text x="34" y="158.0" font-size="12" font-weight="600" fill="#9aa4b2">语言构成</text>
   <rect x="34" y="168" width="992" height="12.0" rx="6" fill="#262a33"/>
-  <rect x="34.0" y="168" width="973.0" height="12.0" rx="6" fill="#7F52FF"/>
-  <rect x="1007.0" y="168" width="12.3" height="12.0" rx="6" fill="#3776AB"/>
-  <rect x="1019.3" y="168" width="5.6" height="12.0" rx="6" fill="#F7DF1E"/>
-  <rect x="1024.9" y="168" width="2.0" height="12.0" rx="6" fill="#FB7299"/>
+  <rect x="34.0" y="168" width="974.1" height="12.0" rx="6" fill="#7F52FF"/>
+  <rect x="1008.1" y="168" width="11.6" height="12.0" rx="6" fill="#3776AB"/>
+  <rect x="1019.7" y="168" width="5.3" height="12.0" rx="6" fill="#F7DF1E"/>
+  <rect x="1025.0" y="168" width="2.0" height="12.0" rx="6" fill="#FB7299"/>
   <rect x="1025.5" y="168" width="2.0" height="12.0" rx="6" fill="#00A1D6"/>
   <rect x="1025.8" y="168" width="2.0" height="12.0" rx="6" fill="#8B7BD8"/>
   <circle cx="38" cy="204" r="4" fill="#7F52FF"/>
-  <text x="48" y="208" font-size="11.5" fill="#9aa4b2">Kotlin 98.1%</text>
+  <text x="48" y="208" font-size="11.5" fill="#9aa4b2">Kotlin 98.2%</text>
   <circle cx="142" cy="204" r="4" fill="#3776AB"/>
   <text x="152" y="208" font-size="11.5" fill="#9aa4b2">JavaScript 1.2%</text>
   <circle cx="267" cy="204" r="4" fill="#F7DF1E"/>
-  <text x="277" y="208" font-size="11.5" fill="#9aa4b2">Python 0.6%</text>
+  <text x="277" y="208" font-size="11.5" fill="#9aa4b2">Python 0.5%</text>
   <circle cx="364" cy="204" r="4" fill="#FB7299"/>
   <text x="374" y="208" font-size="11.5" fill="#9aa4b2">AIDL 0.1%</text>
   <circle cx="447" cy="204" r="4" fill="#00A1D6"/>
